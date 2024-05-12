@@ -5,11 +5,11 @@ class StudentValidation {
 	public:
 		int validteStudent(Student student){
 			if(student.getName().size() == 0 ||
-				student.getName().size() > 7 || 
-				student.getName().size() < 5) {
+				student.getName().size() > 30 || 
+				student.getName().size() < 1) {
 				cout<<"Invalid Name !"<<endl;
-			} else if (student.getAge() >= 30 ||
-					   student.getAge() <=18){ 
+			} else if (student.getAge() >= 20 ||
+					   student.getAge() <=15){ 
 				cout<<"Invalid Age !"<<endl;
 			} else if(student.getPhoneNumber()[0] != '0' ||
 						(
@@ -37,7 +37,7 @@ class CourseValidation {
 			if(course.getName().size() == 0 ||
 				course.getName().size() < 4){
 				cout<<"Invalid Name !"<<endl;
-			} else if (course.getHour() > 15 || course.getHour() < 5){
+			} else if (course.getHour() > 15 || course.getHour() < 2){
 				cout<<"Invalid Hour !"<<endl;
 			} else {
 				return 1;
@@ -51,11 +51,11 @@ class TeacherValidation {
 	public:
 		int validteTeacher(Teacher teacher){
 			if(teacher.getName().size() == 0 ||
-				teacher.getName().size() > 7 || 
-				teacher.getName().size() < 5) {
+				teacher.getName().size() > 30 || 
+				teacher.getName().size() < 2) {
 				cout<<"Invalid Name !"<<endl;
 			} else if (teacher.getAge() > 60 || // 30 60
-					   teacher.getAge() < 30){ 
+					   teacher.getAge() < 23){ 
 				cout<<"Invalid Age !"<<endl;
 			} else if(teacher.getPhoneNumber()[0] != '0' ||
 						(
@@ -67,7 +67,7 @@ class TeacherValidation {
 						|| teacher.getPhoneNumber().size() != 11
 					){ 
 				cout<<"Invalid Phone Number !"<<endl;
-			} else if (teacher.getSalary() < 5000 || teacher.getSalary() > 15000){
+			} else if (teacher.getSalary() < 0 || teacher.getSalary() > 15000){
 				cout<<"Invalid Salary !"<<endl;
 			} else {
 				return 1;
