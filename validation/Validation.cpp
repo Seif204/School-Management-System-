@@ -9,7 +9,7 @@ class StudentValidation {
 				student.getName().size() < 1) {
 				cout<<"Invalid Name !"<<endl;
 			} else if (student.getAge() >= 20 ||
-					   student.getAge() <=15){ 
+					   student.getAge() <=13){ 
 				cout<<"Invalid Age !"<<endl;
 			} else if(student.getPhoneNumber()[0] != '0' ||
 						(
