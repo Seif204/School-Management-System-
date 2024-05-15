@@ -12,8 +12,8 @@ void displaySystem(){
 void showList(string value){
 	cout<<"\t\t************ "<<value<<" Management System ************"<<endl;
 	cout<<"1 - Add "<<value<<"\t\t"<<"2 - Remove "<<value<<endl;
-	cout<<"3 - Edit "<<value<<"\t"<<"4 - Show "<<value<<endl;
-	cout<<"5 - Show "<<value<<" By ID"<<"\t"<<"6 - Exit"<<endl;
+	cout<<"3 - Edit "<<value<<"\t"<<endl;
+	cout<<"4 - Show "<<value<<" By ID"<<"\t"<<"5 - Exit"<<endl;
 }
 void addStudent(){
 	cout<<"Please Enter Student Data: "<<endl;
@@ -179,13 +179,11 @@ void switchStudent(){
 		case 3:
 			editStudent();
 			break;
+		
 		case 4:
-			cout<<"Show Student"<<endl;
-			break;
-		case 5:
 			showStudentByID();
 			break;
-		case 6:
+		case 5:
 			break;
 		default:
 			cout<<"Invalid Choose"<<endl;
@@ -202,13 +200,11 @@ void switchCourse(){
 		case 3:
 			editCourse();
 			break;
+	
 		case 4:
-			cout<<"Show Course"<<endl;
-			break;
-		case 5:
 			showCourseByID();
 			break;
-		case 6:
+		case 5:
 			break;
 		default:
 			cout<<"Invalid Choose"<<endl;
@@ -225,9 +221,7 @@ void switchTeacher(){
 		case 3:
 			editTeacher();
 			break;
-		/*case 4:
-			cout<<"Show Teacher"<<endl;
-			break;*/
+		
 		case 4:
 			showTeacherByID();
 			break;
