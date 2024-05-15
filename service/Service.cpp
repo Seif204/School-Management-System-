@@ -10,7 +10,7 @@ class StudentService {
 		virtual int editStudent(Student student) = 0;
 };
 // Class StudentServiceImpl
-class StudentServiceImplclass {
+class StudentServiceImpl {
 	private:
 		StudentRepositoryImpl studentRepository;
 		StudentValidation studentValidation;
