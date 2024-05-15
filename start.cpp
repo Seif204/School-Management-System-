@@ -12,7 +12,7 @@ void displaySystem(){
 void showList(string value){
 	cout<<"\t\t************ "<<value<<" Management System ************"<<endl;
 	cout<<"1 - Add "<<value<<"\t\t"<<"2 - Remove "<<value<<endl;
-	cout<<"3 - Edit "<<value<<"\t\t"<<"4 - show "<<value<<"By ID"<<endl;
+	cout<<"3 - Edit "<<value<<"\t"<<"4 - show "<<value<<"By ID"<<endl;
 	cout<<"5 - Exit"<<endl;
 }
 void addStudent(){
