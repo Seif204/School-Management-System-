@@ -225,13 +225,13 @@ void switchTeacher(){
 		case 3:
 			editTeacher();
 			break;
-		case 4:
+		/*case 4:
 			cout<<"Show Teacher"<<endl;
-			break;
-		case 5:
+			break;*/
+		case 4:
 			showTeacherByID();
 			break;
-		case 6:
+		case 5:
 			break;
 		default:
 			cout<<"Invalid Choose"<<endl;
